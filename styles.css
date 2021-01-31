@@ -1,0 +1,26 @@
+body{
+    background: linear-gradient(to left, #FD297A, #9424F0); 
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.square1{
+    height: 100px;
+    width: 100px;
+    background-color: chartreuse;
+    border-radius: 2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.square2{
+    height: 100px;
+    width: 100px;
+    background-color: #F4BE2C;
+    border-radius: 2em;
+}

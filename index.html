@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+
+            <button id="btn">click me</button>
+            <div class="square1"></div>
+            <div class="square2"></div>
+            <div class="square1"></div>
+            <div class="square2"></div>
+            <div class="square1"></div>
+            <div class="square2"></div>
+        </div>   
+        <script src="anime-master\lib\anime.min.js"></script>
+        <script>
+            
+            btn.addEventListener("click",animetion1);
+            btn.addEventListener("click",animetion2);
+
+            function animetion1(){
+                anime({
+                targets: '.square1',
+                translateX: [100,350],
+                direction:'alternate',
+                duration:1800,
+                rotateZ: 180,
+                scale: 0.5,
+                loop:true
+            });
+        }
+
+        function animetion2(){
+                anime({
+                targets: '.square2',
+                translateX: [0,-350],
+                direction:'alternate',
+                delay:500,
+                duration:1800,
+                rotateZ: 180,
+                scale: 2,
+                loop:true
+            });
+        }
+        </script>
+    </body>
+</html>
